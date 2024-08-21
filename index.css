@@ -60,6 +60,8 @@ ul li {
 }
 ul {
   margin-right: 15px;
+    text-transform: capitalize;
+
 }
 
 .field {

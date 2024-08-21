@@ -1,6 +1,8 @@
 const input_value = document.getElementById("input");
 
 function Add() {
+    if (input_value || input_value.tim()) return;
+
   // create li
   const task = document.createElement("li");
   task.className = "checked";

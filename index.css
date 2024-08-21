@@ -1,0 +1,119 @@
+body {
+  background-color: #dcd6f7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  width: 30%;
+  margin: 50px auto auto auto;
+  background-color: white;
+  color: black;
+  height: 100%;
+  border: 1px transparent solid;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+h1 {
+  font-size: x-large;
+  color: rgb(12, 12, 105);
+}
+.inputF {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.input {
+  outline: none;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(218, 231, 243);
+  width: 60%;
+}
+.add {
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 20%;
+}
+
+.delete {
+  border: none;
+  padding: 5px;
+  color: gray;
+  font-size: large;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 15px;
+  font-size: large;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: -30px;
+}
+ul {
+  margin-right: 15px;
+}
+
+.field {
+  gap: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.25em;
+  }
+
+  .inputF {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input,
+  .add {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  .input {
+    padding: 10px;
+  }
+
+  .add {
+    padding: 10px;
+  }
+  .field {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  li {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}
